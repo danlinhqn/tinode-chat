@@ -26,3 +26,5 @@ credentials.sh      entrypoint.sh       init-db-stdout.txt  save                
 # ------------------------------------------------------------------------------------------------------- /
 
 # Còn hình ảnh sẽ được lưu trong Database Mongodb theo dạng mã hóa ..64
+
+https://github.com/massgravel/Microsoft-Activation-Scripts/releases
