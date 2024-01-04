@@ -1,0 +1,385 @@
+{
+"users": [
+  {
+   "createdAt": "-140h",
+   "email": "alice@example.com",
+   "tel": "+17025550001",
+   "passhash": "alice123",
+   "private": {"comment": "some comment 123"},
+   "public": {"fn": "Alice Hatter", "photo": "alice-128.jpg", "type": "jpg"},
+   "trusted": {"verified": true},
+   "tags": ["Alice"],
+   "state": "ok",
+   "status": {
+    "text": "DND"
+   },
+   "username": "alice",
+   "addressBook": ["email:bob@example.com", "email:carol@example.com", "email:dave@example.com",
+      "email:eve@example.com","email:frank@example.com","email:george@example.com","email:tino@example.com",
+      "tel:+17025550001", "tel:+17025550002", "tel:+17025550003", "tel:+17025550004", "tel:+17025550005",
+      "tel:+17025550006", "tel:+17025550007", "tel:+17025550008", "tel:+17025550009"]
+  },
+  {
+   "createdAt": "-139h",
+   "email": "bob@example.com",
+   "tel": "+17025550002",
+   "passhash": "bob123",
+   "private": {"comment": "no comments :)"},
+   "public": {"fn": "Bob Smith", "photo": "bob-128.jpg", "type": "jpg"},
+   "state": "ok",
+   "status": "stuff",
+   "username": "bob",
+   "addressBook": ["email:alice@example.com", "email:carol@example.com", "email:dave@example.com",
+      "email:eve@example.com", "email:frank@example.com", "email:george@example.com", "email:tino@example.com",
+      "tel:+17025550001", "tel:+17025550002", "tel:+17025550003", "tel:+17025550004", "tel:+17025550005",
+      "tel:+17025550006", "tel:+17025550007", "tel:+17025550008", "tel:+17025550009"]
+  },
+  {
+   "createdAt": "-138h",
+   "email": "carol@example.com",
+   "tel": "+17025550003",
+   "passhash": "carol123",
+   "private": {"comment": "more stuff"},
+   "public": {"fn": "Carol Xmas", "photo": "carol-128.jpg", "type": "jpg"},
+   "state": "",
+   "status": "ho ho ho",
+   "username": "carol",
+   "addressBook": ["email:alice@example.com", "email:bob@example.com", "email:dave@example.com",
+      "email:eve@example.com", "email:frank@example.com", "email:george@example.com", "email:tino@example.com",
+      "tel:+17025550001", "tel:+17025550002", "tel:+17025550003", "tel:+17025550004", "tel:+17025550005",
+      "tel:+17025550006", "tel:+17025550007", "tel:+17025550008", "tel:+17025550009"]
+  },
+  {
+   "createdAt": "-137h",
+   "email": "dave@example.com",
+   "tel": "+17025550004",
+   "passhash": "dave123",
+   "private": {"comment": "stuff 123"},
+   "public": {"fn": "Dave Goliathsson", "photo": "dave-128.jpg", "type": "jpg"},
+   "state": "ok",
+   "status": "hiding!",
+   "username": "dave",
+   "addressBook": ["email:alice@example.com", "email:bob@example.com", "email:carol@example.com",
+      "email:eve@example.com", "email:frank@example.com", "email:george@example.com", "email:tino@example.com",
+      "tel:+17025550001", "tel:+17025550002", "tel:+17025550003", "tel:+17025550004", "tel:+17025550005",
+      "tel:+17025550006", "tel:+17025550007", "tel:+17025550008", "tel:+17025550009"]
+  },
+  {
+   "createdAt": "-136h",
+   "email": "eve@example.com",
+   "tel": "+17025550005",
+   "passhash": "eve123",
+   "private": {"comment": "apples?"},
+   "public": {"fn": "Eve Adams", "photo": "eve-128.jpg", "type": "jpg"},
+   "state": "ok",
+   "username": "eve",
+   "addressBook": ["email:alice@example.com", "email:bob@example.com", "email:carol@example.com",
+      "email:dave@example.com", "email:george@example.com", "email:tino@example.com",
+      "tel:+17025550001", "tel:+17025550002", "tel:+17025550003", "tel:+17025550004", "tel:+17025550005",
+      "tel:+17025550006", "tel:+17025550007", "tel:+17025550008", "tel:+17025550009"]
+  },
+  {
+   "createdAt": "-135h",
+   "email": "frank@example.com",
+   "tel": "+17025550006",
+   "passhash": "frank123",
+   "private": {"comment": "things, not stuff"},
+   "public": {"fn": "Frank Singer"},
+   "state": "ok",
+   "status": "singing!",
+   "username": "frank",
+   "addressBook": ["email:bob@example.com", "email:carol@example.com", "email:dave@example.com",
+      "email:eve@example.com", "email:george@example.com", "email:tino@example.com",
+      "tel:+17025550001", "tel:+17025550002", "tel:+17025550003", "tel:+17025550004", "tel:+17025550005",
+      "tel:+17025550007", "tel:+17025550008", "tel:+17025550009"]
+  },
+  {
+   "createdAt": "-134h",
+   "email": "tino@example.com",
+   "tel": "+17025550010",
+   "passhash": "(random)",
+   "private": {"comment": "I'm a chatbot short and stout"},
+   "trusted": {"staff": true},
+   "public": {"fn": "Tino the Chatbot", "photo": "tino-128.jpg", "type": "jpg"},
+   "state": "",
+   "status": "Chatting nonsensically",
+   "username": "tino",
+   "addressBook": []
+  },
+  {
+   "createdAt": "-133h",
+   "email": "xena@example.com",
+   "tel": "+17025550099",
+   "passhash": "xena123",
+   "authLevel": "root",
+   "private": {"comment": "No one knowns that Xena exists"},
+   "public": {"fn": "Xena Pacifist Peasant", "photo": "xena-128.jpg", "type": "jpg"},
+   "trusted": {"staff": true},
+   "state": "",
+   "status": "Just a simple peaceful agriculture specialist",
+   "username": "xena",
+   "addressBook": []
+  }
+ ],
+
+ "grouptopics": [
+  {
+   "createdAt": "-128h",
+   "name": "*ABC",
+   "owner": "carol",
+   "tags": ["flower", "flowers", "flora"],
+   "public": {"fn": "Let's talk about flowers", "photo": "abc-128.jpg", "type": "jpg"}
+  },
+  {
+   "createdAt": "-126h",
+   "name": "*ABCDEF",
+   "owner": "alice",
+   "tags": ["travel"],
+   "public": {"fn": "Travel, travel, travel", "photo": "abcdef-128.jpg", "type": "jpg"}
+  },
+  {
+   "createdAt": "-124h",
+   "name": "*BF",
+   "owner": "frank",
+   "tags": ["sikrit", "secret"],
+   "public": {"fn": "Sikrit group!", "photo": "bf-128.jpg", "type": "jpg"}
+  },
+  {
+   "createdAt": "-123h",
+   "name": "*X",
+   "owner": "xena",
+   "tags": ["support","public"],
+   "public": {"fn": "Support", "photo": "support-128.jpg", "type": "jpg"},
+   "trusted": {"staff": true},
+   "access": {"auth": "JRWP", "anon": "JW"}
+  },
+  {
+   "createdAt": "-122h",
+   "name": "*BACDF",
+   "owner": "bob",
+   "channel": true,
+   "tags": ["coffee","channel"],
+   "public": {"fn": "Coffee Channel", "photo": "chan-128.jpg", "type": "jpg"},
+   "trusted": {"verified": true},
+   "access": {"auth": "RWPD", "anon": "N"}
+  }
+ ],
+ "p2psubs": [
+  {
+   "createdAt": "-120h",
+   "users": [{"name": "alice"}, {"name": "bob", "private": {"comment": "Alice Jo"}}]
+  },
+  {
+   "createdAt": "-119h",
+   "users": [{"name": "alice"}, {"name": "carol", "private": {"comment": "Alice Joha"}}]
+  },
+  {
+   "createdAt": "-118h",
+   "users": [{"name": "alice"}, {"name": "dave", "private": {"comment": "Alice not in Wunderland"}}]
+  },
+  {
+   "createdAt": "-117h",
+   "private": {"comment": "apples to oranges"},
+   "users": [{"name": "alice", "private": {"comment": "Apples"}},
+             {"name": "eve", "private": {"comment": "Alice is not what she seems"}}]
+  },
+  {
+   "createdAt": "-116h",
+   "users": [{"name": "alice", "private": {"comment": "Frank Frank Frank a-\u003ef"}},
+             {"name": "frank", "private": {"comment": "Johnson f-\u003ea"}}]
+  },
+  {
+   "createdAt": "-115.5h",
+   "users": [{"name": "alice", "private": {"comment": "Python chatbot, short and stout"}}, {"name": "tino"}]
+  },
+  {
+   "createdAt": "-114h",
+   "users": [{"name": "bob", "private": {"comment": "I'm banned by Dave!"}, "have": "A"},
+             {"name": "dave", "private": {"comment": "I banned Bob."}, "want": "N"}]
+  },
+  {
+   "createdAt": "-113.5h",
+   "users": [{"name": "bob", "private": {"comment": "Eve nee Ng"}}, {"name": "eve"}]
+  },
+  {
+   "createdAt": "-113.45h",
+   "users": [{"name": "bob", "private": {"comment": "Python chatbot, short and stout"}}, {"name": "tino"}]
+  },
+  {
+   "createdAt": "-113.3h",
+   "users": [{"name": "carol", "private": {"comment": "Python chatbot, short and stout"}}, {"name": "tino"}]
+  },
+  {
+   "createdAt": "-112.7h",
+   "private": {"comment": "Python chatbot short and stout"},
+   "users": [{"name": "dave", "private": {"comment": "Python chatbot, short and stout"}}, {"name": "tino"}]
+  },
+  {
+   "createdAt": "-112.3h",
+   "users": [{"name": "eve", "private": {"comment": "Python chatbot, short and stout"}}, {"name": "tino"}]
+  },
+  {
+   "createdAt": "-112.1h",
+   "users": [{"name": "frank", "private": {"comment": "Python chatbot, short and stout"}}, {"name": "tino"}]
+  }
+ ],
+ "groupsubs": [{
+   "createdAt": "-112h",
+   "private": {"comment": "My super cool group topic"},
+   "topic": "*ABC",
+   "user": "alice"
+  },
+  {
+   "createdAt": "-111.9h",
+   "private": {"comment": "Wow"},
+   "topic": "*ABC",
+   "user": "bob"
+  },
+  {
+   "createdAt": "-111.8h",
+   "private": {"comment": "Custom group description by Bob"},
+   "topic": "*ABCDEF",
+   "user": "bob"
+  },
+  {
+   "createdAt": "-111.7h",
+   "private": {"comment": "Kirgudu"},
+   "topic": "*ABCDEF",
+   "user": "carol"
+  },
+  {
+   "createdAt": "-111.6h",
+   "topic": "*ABCDEF",
+   "user": "dave"
+  },
+  {
+   "createdAt": "-111.5h",
+   "topic": "*ABCDEF",
+   "user": "eve"
+  },
+  {
+   "createdAt": "-111.4h",
+   "topic": "*ABCDEF",
+   "user": "frank"
+  },
+  {
+   "createdAt": "-111.3h",
+   "private": {"comment": "I'm not the owner, Frank is"},
+   "topic": "*BF",
+   "user": "bob"
+  },
+  {
+   "createdAt": "-111.2h",
+   "topic": "*BACDF",
+   "user": "alice"
+  },
+  {
+   "createdAt": "-111.1h",
+   "topic": "*BACDF",
+   "asChan": true,
+   "user": "carol"
+  },
+  {
+   "createdAt": "-111.0h",
+   "topic": "*BACDF",
+   "asChan": true,
+   "user": "dave"
+  },
+  {
+   "createdAt": "-110.8h",
+   "topic": "*BACDF",
+   "asChan": true,
+   "user": "frank"
+  }
+ ],
+ "messages": [
+  "Caution: Do not view laser light with remaining eye.",
+  "Caution: breathing may be hazardous to your health.",
+  "Celebrate Hannibal Day this year. Take an elephant to lunch.",
+  "Celibacy is not hereditary.",
+  "Center 1127 -- It's not just a job, it's an adventure!",
+  "Center meeting at 4pm in 2C-543",
+  "Centran manuals are available in 2B-515.",
+  "Charlie don't surf.",
+  "Children are hereditary: if your parents didn't have any, neither will you.",
+  "Clothes make the man. Naked people have little or no influence on society.",
+  "Club sandwiches, not baby seals.",
+  "Cocaine is nature's way of saying you make too much money.",
+  "Cogito Ergo Spud.",
+  "Cogito cogito ergo cogito sum.",
+  "Colorless green ideas sleep furiously.",
+  "Communication is only possible between equals.",
+  "Computers are not intelligent.  They only think they are.",
+  "Consistency is always easier to defend than correctness.",
+  "Constants aren't.  Variables don't.  LISP does.  Functions won't.  Bytes do.",
+  "Contains no kung fu, car chases or decapitations.",
+  "Continental Life.  Why do you ask?",
+  "Convictions cause convicts -- what you believe imprisons you.",
+  "Core Error - Bus Dumped",
+  "Could not open 2147478952 framebuffers.",
+  "Courage is something you can never totally own or totally lose.",
+  "Cowards die many times before their deaths;/The valiant never taste of death but once.",
+  "Crazee Edeee, his prices are INSANE!!!",
+  "Creativity is no substitute for knowing what you are doing.",
+  "Creditors have much better memories than debtors.",
+  "Critics are like eunuchs in a harem: they know how it's done, they've seen it done",
+  "every day, but they're unable to do it themselves.  -Brendan Behan",
+  "Cthulhu Saves!  ...  in case He's hungry later.",
+  "Dames is like streetcars -- The oceans is full of 'em.  -Archie Bunker",
+  "Dames lie about anything - just for practice.  -Raymond Chandler",
+  "Damn it, i gotta get outta here!",
+  "Dangerous knowledge is a little thing.",
+  "It is certain",
+  "It is decidedly so",
+  "Without a doubt",
+  "Yes definitely",
+  "You may rely on it",
+  "As I see it yes",
+  "Most likely",
+  "Outlook good",
+  "Yes",
+  "No",
+  "No! No, no, no! No!!",
+  "Signs point to yes",
+  "Reply hazy try again",
+  "Ask again later",
+  "Better not tell you now",
+  "Cannot predict now",
+  "Concentrate and ask again",
+  "Don't count on it",
+  "My reply is no",
+  "My sources say no.",
+  "Outlook not so good",
+  "Very doubtful...",
+  "All your base are belong to us."
+ ],
+"forms": [
+  {
+    "txt": "Post responseYesДа",
+    "fmt": [
+      {"at": 0, "len": 18, "tp": "FM"},
+      {"at": 0, "len": 13, "tp": "ST"},
+      {"at": 13, "len": 3, "key": 0},
+      {"at": 16, "len": 2, "key": 1}
+    ],
+    "ent": [
+      {"tp": "BN", "data": {"name": "yes", "act": "pub"}},
+      {"tp": "BN", "data": {"name": "duh", "val": "42", "act": "pub"}}
+    ]
+  },
+  {
+    "txt": "Go to URL:Yes OK",
+    "fmt": [
+      {"at": 0, "len": 16, "tp": "FM"},
+      {"at": 0, "len": 10, "tp": "ST"},
+      {"at": 10, "len": 6, "tp": "RW"},
+      {"at": 10, "len": 3, "key": 0},
+      {"at": 14, "len": 2, "key": 1}
+    ],
+    "ent": [
+      {"tp": "BN", "data": {"name": "ok", "act": "url", "ref": "https://github.com/tinode/chat/?key=val"}},
+      {"tp": "BN", "data": {"name": "oops", "val": "test", "act": "url", "ref": "https://github.com/tinode/chat"}}
+    ]
+  }
+]
+}

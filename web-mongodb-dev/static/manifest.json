@@ -1,0 +1,45 @@
+{
+  "name": "Weallnet",
+  "short_name": "Weallnet",
+  "description": "Weallnet.\nSee more at https://tinode.co/",
+  "categories": ["chat", "communication", "productivity"],
+  "icons": [
+    {
+      "src":"img/logo96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src":"img/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "silver",
+  "theme_color": "#3949AB",
+  "display": "standalone",
+  "gcm_sender_id": "103953800507",
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=co.tinode.tindroidx",
+      "id": "co.tinode.tindroidx"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/us/app/tinode/id1483763538"
+    }
+  ],
+  "permissions": {
+    "audio-capture": {
+      "description": "Required for recording voice messages"
+    }
+  }
+}

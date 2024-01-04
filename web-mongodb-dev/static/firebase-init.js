@@ -1,0 +1,1 @@
+const FIREBASE_INIT = {};

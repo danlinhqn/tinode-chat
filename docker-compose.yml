@@ -1,0 +1,50 @@
+version: '3.8'
+
+# Build DB Mongodb
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    restart: always
+    networks:
+      - tinode-net
+    command: ["--replSet", "rs0"]
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.runCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    depends_on:
+      - initdb
+
+# Edit DB trước khi apply source
+  initdb:
+    image: mongo:latest
+    container_name: initdb
+    networks:
+      - tinode-net
+    entrypoint: [ "/bin/bash", "-c" ]
+    command: >
+      "echo 'Starting replica set initialize';
+      until mongosh --host mongodb --eval 'print(\"waited for connection\")'; do sleep 2; done;
+      echo 'Connection finished';
+      echo 'Creating replica set';
+      echo \"rs.initiate({'_id': 'rs0', 'members': [ {'_id': 0, 'host': 'mongodb:27017'} ]})\" | mongosh --host mongodb"
+
+# Bắt đầu build Source Chat, sau khi đã có DB
+  tinode-srv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: tinode-chat:v01
+    container_name: tinode-srv
+    ports:
+      - "6060:6060"
+    networks:
+      - tinode-net
+    depends_on:
+      - mongodb
+
+networks:
+  tinode-net:
+    external: true

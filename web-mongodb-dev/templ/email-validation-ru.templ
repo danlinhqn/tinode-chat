@@ -1,0 +1,53 @@
+{{/*
+  RUSSIAN
+
+  See explanation in ./email-validation-en.templ
+*/}}
+
+{{define "subject" -}}
+Регистрация Tinode: подтвердите емейл
+{{- end}}
+
+{{define "body_html" -}}
+<html>
+<body>
+
+<p>Здравствуйте.</p>
+
+<p>Вы получили это сообщение потому, что зарегистрировались в <a href="{{.HostUrl}}">Tinode</a>.</p>
+
+<p><a href="{{.HostUrl}}#cred?method=email&code={{.Code}}&token={{.Token}}&hl=RU">Кликните здесь чтобы подтвердить</a>
+регистрацию или перейдите по сслыке
+<a href="{{.HostUrl}}#cred?what=email">{{.HostUrl}}#cred?method=email&hl=RU</a>
+и введите следующий код:</p>
+<blockquote><big>{{.Code}}</big></blockquote>
+<p>Возможно, вам потребуется ввести логин и пароль.</p>
+
+<p>Если вы не регистрировались в Tinode, просто игнорируйте это сообщение.</p>
+
+<p><a href="https://tinode.co/">Команда Tinode</a></p>
+
+</body>
+</html>
+{{- end}}
+
+{{define "body_plain" -}}
+
+Здравствуйте.
+
+Вы получили это сообщение потому, что зарегистрировались в Tinode ({{.HostUrl}}).
+
+Кликните на {{.HostUrl}}#cred?method=email&code={{.Code}}&token={{.Token}}&hl=RU чтобы подтвердить
+регистрацию или перейдите по сслыке {{.HostUrl}}#cred?what=email">{{.HostUrl}}#cred?method=email&hl=RU
+и введите следующий код:
+
+	{{.Code}}
+
+Возможно, вам также потребуется ввести логин и пароль.
+
+Если вы не регистрировались в Tinode, просто игнорируйте это сообщение.
+
+Команда Tinode
+https://tinode.co/
+
+{{- end}}
