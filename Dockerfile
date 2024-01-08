@@ -142,7 +142,7 @@ RUN chmod +x entrypoint.sh
 RUN dos2unix entrypoint.sh
 
 # Get Source Tại Đây
-COPY web-mongodb-dev /opt/tinode
+COPY web-mongodb /opt/tinode
 
 # Create directory for chatbot data.
 RUN mkdir /botdata
