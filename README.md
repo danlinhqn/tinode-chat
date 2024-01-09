@@ -1,4 +1,6 @@
 # Cách chạy nhanh 
+docker network create tinode-net
+
 docker-compose up -d
 
 # Cách cài đặt từ Docker từng bước chạy lệnh sau ---------------------------------------------------------------------- /
