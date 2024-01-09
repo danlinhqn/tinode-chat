@@ -19,7 +19,7 @@ services:
 
 # Edit DB trước khi apply source
   initdb:
-    image: mongo:latest
+    image: mongo:4.4
     container_name: initdb
     networks:
       - tinode-net
