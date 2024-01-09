@@ -139,8 +139,13 @@ RUN chmod +x config.template
 RUN chmod +x entrypoint.sh
 
 # Replace dos2unix with tr -d '\r'
-RUN tr -d '\r' < entrypoint.sh > entrypoint_unix.sh
-RUN chmod +x entrypoint_unix.sh
+# RUN tr -d '\r' < entrypoint.sh > entrypoint_unix.sh
+# RUN chmod +x entrypoint_unix.sh
+
+RUN sed -i 's/\r$//' entrypoint.sh
+# Ensure entrypoint.sh is executable
+RUN chmod +x entrypoint.sh
+
 
 # Get Source Tại Đây
 COPY web-mongodb /opt/tinode
@@ -152,7 +157,7 @@ RUN mkdir /botdata
 #ENTRYPOINT ["./entrypoint.sh"]
 
 # Dùng trên macbook
-ENTRYPOINT ./entrypoint_unix.sh
+ENTRYPOINT ["./entrypoint.sh"]
 
 # HTTP, gRPC, cluster ports
 EXPOSE 6060 16060 12000-12003
