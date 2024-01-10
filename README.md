@@ -30,3 +30,11 @@ credentials.sh      entrypoint.sh       init-db-stdout.txt  save                
 # Còn hình ảnh sẽ được lưu trong Database Mongodb theo dạng mã hóa ..64
 
 https://github.com/massgravel/Microsoft-Activation-Scripts/releases
+
+# Giữ session cho user khi đăng nhập
+react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+      className: submitClasses,
+      type: "submit",
+      onClick: this.handleToggleSaveToken
+}
+Ở dòng 4976 của file index.dev.js , thêm dòng onClick: this.handleToggleSaveToken để lưu token, giữ session cho người dùng

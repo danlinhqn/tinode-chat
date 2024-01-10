@@ -4891,7 +4891,7 @@ class LoginView extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component)
   }
   handleLoginChange(e) {
     this.setState({
-      login: e.target.value
+      login: e.target.value,
     });
   }
   handlePasswordChange(e) {
@@ -4973,9 +4973,10 @@ class LoginView extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component)
       }]
     }))), react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "dialog-buttons"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    },react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
       className: submitClasses,
-      type: "submit"
+      type: "submit",
+      onClick: this.handleToggleSaveToken
     }, react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__.FormattedMessage, {
       id: "button_sign_in",
       defaultMessage: [{

@@ -35,7 +35,7 @@ services:
   tinode-srv:
     build:
       context: .
-      dockerfile: Dockerfile-Mac
+      dockerfile: Dockerfile
     image: tinode-chat:v01
     container_name: tinode-srv
     ports:
